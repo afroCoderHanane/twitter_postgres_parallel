@@ -1,5 +1,6 @@
 # Parallel Twitter in Postgres
 [![tests_denormalized](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized.yml)
+
 [![tests_denormalized_parallel](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized_parallel.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized_parallel.yml)
 
 [![tests_normalized](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized.yml)
