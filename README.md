@@ -1,16 +1,14 @@
 # Parallel Twitter in Postgres
+[![tests_denormalized](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized.yml)
+[![tests_denormalized_parallel](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized_parallel.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_denormalized_parallel.yml)
 
-![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalized/badge.svg)
+[![tests_normalized](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized.yml)
 
-![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalized_parallel/badge.svg)
+[![tests_normalized_batch](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized_batch.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized_batch.yml)
 
-![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalized_batch/badge.svg)
+[![tests_normalized_batch_parallel](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized_batch_parallel.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized_batch_parallel.yml)
 
-![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalized_batch_parallel/badge.svg)
-
-![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_denormalized/badge.svg)
-
-![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_denormalized_parallel/badge.svg)
+[![tests_normalized_parallel](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized_parallel.yml/badge.svg)](https://github.com/afroCoderHanane/twitter_postgres_parallel/actions/workflows/tests_normalized_parallel.yml)
 
 In this assignment, you will make your data loading into postgres significantly faster using batch loading and parallel loading.
 Notice that many of the test cases above are already passing;
@@ -37,7 +35,7 @@ you will have to ensure that they remain passing as you complete the tasks below
 Bring up a fresh version of your containers by running the commands:
 ```
 $ docker-compose down
-$ docker-compose volume prune
+$ docker volume prune
 $ docker-compose up -d --build
 ```
 
@@ -173,8 +171,10 @@ Ensure that your runtimes on the lambda server are recorded below.
 
 |                        | elapsed time (sequential) | elapsed time (parallel) |
 | -----------------------| ------------------------- | ------------------------- |
-| `pg_normalized`        |                           |                           | 
-| `pg_normalized_batch`  |                           |                           | 
-| `pg_denormalized`      |                           |                           | 
+| `pg_normalized`        |8:36                       |  0:54                     | 
+| `pg_normalized_batch`  |2:32                       |  0:14                     | 
+| `pg_denormalized`      |0:90                       |  0:14                     | 
 
 Then upload a link to your forked github repo on sakai.
+
+
