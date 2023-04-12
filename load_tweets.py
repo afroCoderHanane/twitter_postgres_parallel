@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # process command line args
-import argpars
+import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--db',required=True)
 parser.add_argument('--inputs',nargs='+',required=True)
